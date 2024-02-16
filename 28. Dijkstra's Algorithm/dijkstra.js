@@ -67,7 +67,7 @@ class WeightedGraph {
       }
 
       if (smallest || distances[smallest] !== Infinity) {
-        for (let neighbour in this.adjList[smallest]) {
+        for (let neighbour in this.adjList[smallest]) {// here neighbour will be index of array
           // Find neighbour node
           let nextNode = this.adjList[smallest][neighbour];
 
